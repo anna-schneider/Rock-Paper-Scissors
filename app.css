@@ -1,5 +1,93 @@
+/* - Dark Text: hsl(229, 25%, 31%)
+- Score Text: hsl(229, 64%, 46%)
+- Header Outline: hsl(217, 16%, 45%) */
+
+
 body {
   background: radial-gradient(circle at 50% 20%, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
   font-family: 'Barlow Semi Condensed', sans-serif;
   min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  border: 4px solid hsl(217, 16%, 45%);
+  border-radius: 5px;
+  padding: 12px;
+  margin: 50px 25px;
+}
+
+.logo {
+  max-height: 70px;
+  margin-top: 15px;
+}
+
+.score-container {
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  max-height: 75px;
+  min-width: 75px;
+  padding: 15px 12px;
+}
+
+#score-header {
+  color: hsl(229, 24%, 46%);
+  border-radius: 5px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+#score {
+  color: hsl(229, 25%, 31%);
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0;
+}
+
+#btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.btn-background {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 0 -7px rgba(0,0,0,0.15);
+  height: 150px;
+  width: 150px;
+}
+
+.btn-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: inset 0 5px rgba(0,0,0,0.15);
+  height: 118px;
+  width: 118px;
+}
+
+.rock-btn{
+  background: linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.scissors-btn{
+  background: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.paper-btn {
+background: linear-gradient(to bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.icons {
+  height: 60px;
+  width: 49px;
 }
