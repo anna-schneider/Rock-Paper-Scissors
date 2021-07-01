@@ -10,7 +10,7 @@ function checkForWinner() {
     result.innerText = "tie"
   } else if (playerChoice === "scissors" && puterChoice === "paper"
     || playerChoice === "paper" && puterChoice === "rock"
-    || playerChoice === "rock" && puterChoice === "sciccors") {
+    || playerChoice === "rock" && puterChoice === "scissors") {
     playerScoreUpdate()
     result.innerText = "you win"
   } else {
@@ -20,7 +20,7 @@ function checkForWinner() {
 }
 
 // Computer's choice
-function putersChoice() {
+function puterChoice() {
 
 }
 
