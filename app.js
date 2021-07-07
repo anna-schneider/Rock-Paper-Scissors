@@ -2,6 +2,24 @@ let playerScore = 0
 let puterScore = 0
 let playerChoice = undefined
 
+const openBtn = document.getElementById('open');
+const closeBtn = document.getElementById('close');
+const rulesModal = document.getElementById('modal')
+const blackBack = document.querySelector('.rules-container');
+
+//Show game's rules
+  openBtn.addEventListener('click',()=>{
+  rulesModal.style.display = 'flex';
+  blackBack.style.display='flex';
+});
+
+//Hide game's rules
+  closeBtn.addEventListener('click',()=>{
+  rulesModal.style.display = 'none';
+  blackBack.style.display='none';
+});
+
+
 // Function to check for winner
 
 function checkForWinner() {
